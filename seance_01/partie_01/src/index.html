@@ -1,0 +1,55 @@
+<!-- Cette balise indique que la page est décrite en html5 -->
+<!DOCTYPE html>
+
+<html>
+
+
+	<!-- =========================================== -->
+	<!-- Les balises <head></head> contiennent les métadonnées de la page web -->
+	<!-- =========================================== -->
+	<head>
+
+		<!-- Encodage des caractères en utf-8 -->
+		<meta charset="utf-8">
+
+		<!-- Rendu adapté sur téléphone et tablette -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Le titre de la page Web -->
+		<title> Ma première page web </title>
+
+
+		<!-- Chargement du fichier CSS -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Chargement des codes JavaScript -->
+		<script src="script.js" defer></script>
+
+	</head>
+
+
+	<!-- =========================================== -->
+	<!-- Le corp de la page web est décrit entre les balises <body></body> -->
+	<!-- =========================================== -->
+
+	<body>
+
+		<!-- Les élements html sont qualifiés par des balises -->
+		<h1> Un titre principal </h1>
+
+		<!-- La balise div décrit un block générique. Il paramétrable dans le fichier css à partir de son identifiant -->
+		<div id="ensemble1">
+			Le texte contenu dans l'ensemble 1.
+		</div>
+
+		<div id="ensemble2">
+			Le texte contenu dans l'ensemble 2.
+		</div>
+
+		<!-- Cette balise n'est pas décrite directement dans le fichier html, mais sera complété lors de l'execution due JavaScript -->
+		<div id="ensemble3">
+		</div>
+
+	</body>
+
+</html>
