@@ -14,5 +14,8 @@ Chaque séance est associé à un répertoire particulier qui lui même peut con
 
 Au choix:
 * Téléchargez directement une archive .zip que vous décompressez sur votre ordinateur.
+![telechargement](output.gif)
 
-* Clonez le projet à l'aide de git. Vous pourrez gérer les versions de vos modifications à l'aide de git.
+* Clonez le projet à l'aide de git. Vous pourrez gérer les versions de vos modifications à l'aide de git.<br/>
+`git clone https://github.com/drohmer/INF473F.git`
+en ligne de commande.
