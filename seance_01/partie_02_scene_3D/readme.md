@@ -12,7 +12,7 @@ Ce premier programme présente une scène 3D minimaliste (un cube rouge statique
 La documentation et le code de Three.js sont disponibles à l'adresse [https://threejs.org/](https://threejs.org/).
 
 Notamment, les liens suivants vous seront généralement utiles:
-* [Code source de Three.js ainsi que les codes des exemples](Code source de Three.js)
+* [Code source de Three.js ainsi que les codes des exemples](https://threejs.org/)
 * [Documentation de référence](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
 * [Série d'exemples de scènes 3D](https://threejs.org/examples/)
 
