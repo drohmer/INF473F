@@ -96,7 +96,7 @@ function animate(sceneThreeJs, time) {
 //  Création d'un moteur de rendu et ajout dans le document HTML
 function initEmptyScene(sceneThreeJs) {
 
-    sceneThreeJs.sceneGraph = new THREE.Scene();
+    sceneThreeJs.sceneGraph = new THREE.Scene( );
 
     sceneThreeJs.camera = sceneInit.createCamera(-10,8,10);
     sceneInit.insertAmbientLight(sceneThreeJs.sceneGraph);
@@ -107,7 +107,8 @@ function initEmptyScene(sceneThreeJs) {
 
     sceneThreeJs.controls = new THREE.OrbitControls( sceneThreeJs.camera );
 
-    window.addEventListener('resize', function(event){onResize(sceneThreeJs);}, false);
+    const onResizeFunction = function(event) { onResize(sceneThreeJs); };
+    window.addEventListener('resize', onResizeFunction );
 }
 
 // Fonction de gestion d'animation

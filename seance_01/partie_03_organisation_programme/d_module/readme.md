@@ -23,4 +23,4 @@ Le code suivant propose la mise en place d'un tel module pour l'initialisation d
 
 __Q.__ Observez la mise en place de ce module. Modifiez à nouveau le code de manière à pouvoir paramétrer la position et la couleur de la lumière.
 
-__Q.__ Ajoutez à ce module la possibilité de créer et de renvoyer un cube dont le centre, la largeur et la couleur soit paramétrables (notez que dans les programmes suivants, on proposera un module permettant d'initialiser différentes formes de bases dans un module "primitive").
+__Q.__ Ajoutez à ce module la possibilité de créer et de renvoyer un cube dont le centre, longueur d'un coté, et la couleur soient paramétrables (notez que dans les programmes suivants, on proposera un module permettant d'initialiser différentes formes de bases dans un module "primitive").

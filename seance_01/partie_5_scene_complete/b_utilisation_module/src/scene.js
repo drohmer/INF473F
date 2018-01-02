@@ -81,6 +81,7 @@ function animate(sceneThreeJs, time) {
     cylinder.setRotationFromAxisAngle(Vector3(0,0,1),Math.PI*t); // application de la rotation
     cylinder.position.set(0,1.5,2); // placement de l'objet à sa position dans l'espace
 
+
     render(sceneThreeJs);
 }
 
@@ -105,7 +106,7 @@ function initEmptyScene(sceneThreeJs) {
 
     sceneThreeJs.controls = new THREE.OrbitControls( sceneThreeJs.camera );
 
-    window.addEventListener('resize', function(event){onResize(sceneThreeJs);}, false);
+    window.addEventListener('resize', function(event){onResize(sceneThreeJs);} );
 }
 
 // Fonction de gestion d'animation

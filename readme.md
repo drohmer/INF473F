@@ -9,10 +9,10 @@ Cette page github contient différents codes d'exemples et tutoriaux pour s'init
 * Les énoncés sont directement lisibles en ligne dans l'interface github. Chaque partie est associée à un énoncé apparaissant lorsque vous naviguez dans les répertoires.
 * Les codes sont disponibles dans les répertoires _src/_ respectifs. Pour exécuter/modifier les codes, vous devez télécharger le contenu du dépôt sur votre ordinateur.
 
-Chaque partie présente un point spécifique potentiellement utile pour la réalisation de votre projet. Les parties sont des indépendantes, et la séparation en séance 1 et 2 est arbitraire. Il vous est cependant conseillé de suivre les différentes parties dans l'ordre.
+Chaque partie présente un point spécifique potentiellement utile pour la réalisation de votre projet. Les parties sont des indépendantes, et la séparation en séance 1 et 2 est arbitraire. Il vous est cependant conseillé de suivre les différentes parties dans l'ordre (commencez par seance_01/partie_01, puis partie_02, etc).
 
 Les questions de l'énoncé seront indiquées par __Q__.
-Ces questions ont principalement pour objectifs de vous faire prendre en main le code. De manière générale, n'hésitez cependant pas à vous documenter, et modifier les codes par vous même au-delà des questions posées, et pour explorer les voies que vous souhaitez.
+Ces questions ont principalement pour objectifs de vous faire prendre en main le code. De manière générale, n'hésitez cependant pas à vous documenter et modifier les codes par vous même au-delà des questions posées, et explorer les voies que vous souhaitez.
 
 ## Téléchargement du code
 
