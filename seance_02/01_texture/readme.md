@@ -62,7 +62,7 @@ Tappez ensuite l'adresse suivante dans votre navigateur
 http://localhost:8000/
 ```
 
-Vous devriez voir désormais la scène avec les textures.
+Vous devriez voir désormais la scène avec les textures ([similaire à celle-ci](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/01_texture/src/index.html)).
 
 
 ### Remarques lors de l'utilisation d'un serveur
@@ -70,3 +70,6 @@ Vous devriez voir désormais la scène avec les textures.
 * L'utilisation d'un serveur local est très classique en programmation web, et nous devrons utiliser une approche similaire si nous souhaitons pouvoir charger une scène sauvegardé à partir d'un fichier.
 * Lorsque votre navigateur lit le code depuis le serveur, il est possible qu'il place en "cache" une partie du code (optimisation par défaut du comportement du navigateur). Il peut alors arriver que vous modifiez le code (par ex. les images de textures), alors que la scène visualisée dans le navigateur reste inchangée même après rechargement de celle-ci.
 => N'hésitez pas à vider les données de cache de votre navigateur lorsque vous modifiez votre code (sous Firefox/Chrome raccourci clavier avec CTRL+Shift+Suppr).
+
+
+## Chargement asynchrone
