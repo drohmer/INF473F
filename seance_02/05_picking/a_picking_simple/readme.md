@@ -4,6 +4,11 @@ Ce premier code vous donne un exemple de réalisation de picking d'un sommet du 
 
 Le point 3D correspondant sur le cube est alors affiché en rouge, et un plan semi-transparent est affiché. Ce plan passe par le point 3D du cube, et est orienté de manière à être parallèle au plan de la caméra au moment de la sélection.
 
+![Resultat](pictures/resultat.png)
+
+[_Code en ligne_](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/05_picking/a_picking_simple/src/index.html)
+
+
 On pourra noter les choses suivantes:
 * Pour simplifier le code de ce premier exemple, les données sont placées en tant que variables globales.
 * Un cadre (créé par la fonction _initFrameXYZ_) permet de visualiser les axes (x,y,z) en couleur (respectivement rouge, vert, et bleu) sur les intervalles [0,1].

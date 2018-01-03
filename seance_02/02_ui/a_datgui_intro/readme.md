@@ -1,7 +1,7 @@
 # Dat.gui
 
 
-Ce code présente une interface succincte avec dat.gui non liée à Three.js.
+Ce code présente une [interface succincte](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/02_ui/a_datgui_intro/src/index.html) avec dat.gui non liée à Three.js.
 
 * Les résultats sont affichés dans la console (après ouverture du fichier HTML)
 * Le code est entièrement contenu dans le fichier script.js
@@ -21,7 +21,7 @@ __Q__. Ajoutez un second bouton qui affiche sur la console: "oui" si checkBox es
 ## Partie 2 : Fonctions de rappels/callbacks
 
 Il peut être avantageux d'appeler une fonction spécifique automatiquement dès lors qu'une valeur de l'interface est modifiée. C'est le rôle des _fonctions de rappels_, désignées en anglais par __callback__ (notion déjà rencontrée lors du redimensionnement de la fenêtre).
-Rem. Une _fonction de rappel_/_callback_ est une fonction passée en paramètre d'une autre fonction. Cela permet des appels génériques. L'utilisation de telles fonctions dans le cadre d'interface est très répandue. 
+Rem. Une _fonction de rappel_/_callback_ est une fonction passée en paramètre d'une autre fonction. Cela permet des appels génériques. L'utilisation de telles fonctions dans le cadre d'interface est très répandue.
 
 __Q__. Observez la mise en place de fonctions de rappels avec les méthodes _.onChange_ et _.onFinishChange_. Quel est la différence entre ces deux méthodes?
 

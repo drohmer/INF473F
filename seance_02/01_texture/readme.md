@@ -62,7 +62,12 @@ Tapez ensuite l'adresse suivante dans votre navigateur
 http://localhost:8000/
 ```
 
-Vous devriez voir désormais la scène avec les textures ([similaire à celle-ci](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/01_texture/src/index.html)).
+Vous devriez voir désormais la scène avec les textures
+
+
+![Resultat](pictures/resultat.jpg)
+
+ ([similaire à celle-ci](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/01_texture/src/index.html)).
 
 
 ### Remarques lors de l'utilisation d'un serveur

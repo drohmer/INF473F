@@ -1,7 +1,7 @@
 # GUI et scène 3D
 
 
-Ce code présente l'utilisation d'une interface en interaction avec la scène 3D.
+Ce code présente l'utilisation d'une interface en [interaction avec la scène 3D](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/02_ui/b_ui_scene3D/src/index.html).
 
 __Q.__ Retrouvez à partir du code comment sont gérés les différentes actions.
 

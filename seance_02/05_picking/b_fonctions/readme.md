@@ -1,6 +1,6 @@
 # Picking et déplacement d'objet
 
-Ce second code propose de réaliser la sélection ainsi que le déplacement de l'objet par une approche de type "drag and drop".
+Ce second code propose de réaliser la [sélection ainsi que le déplacement de l'objet par une approche de type "drag and drop"](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/05_picking/b_fonctions/src/index.html).
 
 Notez que le code n'utilise cette fois plus de variables globales et adapte les fonctions de _callback_ passées en paramètres de manière à ne recevoir que les données nécessaires.
 

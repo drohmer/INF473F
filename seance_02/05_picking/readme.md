@@ -10,5 +10,6 @@ Dans le cas d'un picking simple, il suffira, une fois ces intersections calculé
 
 ![Illustration du picking](pictures/raycasting.png)
 
-Les deux programmes suivants proposent: *a. Un picking simple sur un objet.
+Les deux programmes suivants proposent: 
+*a. Un picking simple sur un objet.
 *b. Un picking et une translation interactive de l'objet selectionné.
