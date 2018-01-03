@@ -24,6 +24,7 @@ N'hésitez pas à vous y référer régulièrement.
 __Q.__ Observez les trois fichiers sources et assurez vous que vous puissiez visualiser la scène 3D en ouvrant le fichier HTML par un navigateur. Notez que cette scène est pour l'instant statique (ex. il n'est pas possible de modifier la position de la caméra).
 
 ![Résultat visuel](pictures/resultat.png)
+
 [_Scène 3D visualisée dans le navigateur_](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_01/partie_02_scene_3D/src/index.html)
 
 ### Compréhension du fonctionnement du code JavaScript
