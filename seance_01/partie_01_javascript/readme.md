@@ -31,8 +31,8 @@ __Q.__ Ouvrez le fichier _script.js_ avec votre éditeur de texte. Il s'agit cet
 ![telechargement](pics/developer_mode.png)
 _(exemple de console en "mode développeur" sous Chromium)_
 
-<br/>
 _Rem._ Cette console permet typiquement de debuger votre application. Notez qu'un mode debug avec points d'arrêts dans le code source est également généralement disponible dans vos navigateurs.
+
 
 __Q.__ Lisez le déroulement du code JavaScript et des commentaires, et comparez aux résultats visualisés sur la console.
 N'hésitez pas à tester différentes valeurs et nous appeler en cas de questions.

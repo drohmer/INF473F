@@ -10,9 +10,9 @@ Dans le cas général, le déplacement de la souris ne peut déterminer qu'un d�
 
 L'une des approches permettant d'imiter l'impression de "drag and drop" de l'objet consiste à déplacer celui-ci dans le plan de la caméra, de manière à ce que le sommet sélectionné suive exactement le mouvement de la souris. Il s'agit du cas présenté ici.
 
-Considérons qu'un point $p_0$ ait été sélectionné sur l'objet 3D à partir du point $(x,y)$ sélectionné sur l'écran. La souris est ensuite déplacée sur l'écran en un nouveau point 2D $(x',y')$. L'objectif est de calculer la translation à appliquer à $p_0$ telle que l'image de $p_0+translation$ ait pour image le point 2D $(x',y')$.
+Considérons qu'un point p0 ait été sélectionné sur l'objet 3D à partir du point (x,y) sélectionné sur l'écran. La souris est ensuite déplacée sur l'écran en un nouveau point 2D (x',y'). L'objectif est de calculer la translation à appliquer à p0 telle que l'image de p0+translation ait pour image le point 2D (x',y').
 
-Soit $P$ le plan passant par le point 3D sélectionné $p$, et de normale $n$. Soit $R$ le rayon ayant pour origine le centre de la caméra p0, et de direction d (calculé à partir de (x',y')). On pourra considérer que le rayon R est paramétré par un paramètre t>0, et $R(t) = p0 + t d$. Soit pI le point d'intersection entre le rayon R et le plan P. On considèrera que $R(tI) = pI$.
+Soit P le plan passant par le point 3D sélectionné p, et de normale n. Soit R le rayon ayant pour origine le centre de la caméra p0, et de direction d (calculé à partir de (x',y')). On pourra considérer que le rayon R est paramétré par un paramètre t>0, et R(t) = p0 + t d. Soit pI le point d'intersection entre le rayon R et le plan P. On considèrera que R(tI) = pI.
 
 __Q.__ Donnez l'expression de la valeur tI en fonction de p, p0, n, et d. En déduire la valeur de pI et la translation à appliquer à p0.
 

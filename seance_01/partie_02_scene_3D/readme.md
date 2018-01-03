@@ -7,6 +7,7 @@ Ce premier programme présente une scène 3D minimaliste (un cube rouge statique
 * Le fichier JavaScript (extension .js) contient le coeur du code d'affichage de la scène 3D.
 
 
+
 #### Documentation de Three.js
 
 La documentation et le code de Three.js sont disponibles à l'adresse [https://threejs.org/](https://threejs.org/).
@@ -21,6 +22,9 @@ N'hésitez pas à vous y référer régulièrement.
 ### Observation du premier programme
 
 __Q.__ Observez les trois fichiers sources et assurez vous que vous puissiez visualiser la scène 3D en ouvrant le fichier HTML par un navigateur. Notez que cette scène est pour l'instant statique (ex. il n'est pas possible de modifier la position de la caméra).
+
+![Résultat visuel](pictures/resultat.png)
+[_Scène 3D visualisée dans le navigateur_](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_01/partie_02_scene_3D/src/index.html)
 
 ### Compréhension du fonctionnement du code JavaScript
 
