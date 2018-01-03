@@ -85,6 +85,7 @@ function onMouseDown(event) {
     const x = 2*(xPixel/canvasSize)-1;
     const y = 1-2*(yPixel/canvasSize);
 
+
     // Recherche si le clic est à l'intérieur ou non de la sphère
     if ( x*x+y*y < radius*radius ) {
 

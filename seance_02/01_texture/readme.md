@@ -2,11 +2,11 @@
 
 ## Textures en Three.js
 
-Ce programme présente l'application de textures sur une surface. A titre d'information, l'application d'une texture sur un maillage nécessite deux paramètres:
+Ce programme présente l'application de textures sur une surface. À titre d'information, l'application d'une texture sur un maillage nécessite deux paramètres:
 1. Une image qui va être appliquée sur la surface.
-1. Des coordonnées de textures (généralement appelées (u,v), ou (s,t)) associées à chaque sommet du maillage, et qui viennent donner la corresponsance entre un sommet donné du maillage, et sa position 2D dans l'espace de l'image.
+1. Des coordonnées de textures (généralement appelées (u,v), ou (s,t)) associées à chaque sommet du maillage, et qui viennent donner la correspondance entre un sommet donné du maillage, et sa position 2D dans l'espace de l'image.
 
-Les coordonnées de textures sont généralement complétés automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
+Les coordonnées de textures sont généralement complétées automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
 
 Dans le cas du code suivant, on utilise les coordonnées de textures fournies par défaut lors de la création des primitives de Three.js
 Nous devons cependant charger les images qui sont placées dans le répertoire _pictures/_
@@ -29,11 +29,11 @@ Notez que si cela était autorisé, n'importe quelle page web sur internet (plus
 
 On pourra noter que le principe général de la communication web passe par un schéma dit de client/serveur.
 * La partie client correspond au navigateur que vous lancez sur votre machine.
-* La partie serveur correspond généralement au code présent sur une machine quelconque dans le monde et dont l'objectif est de fournir les pages html et ressources demandées.
+* La partie serveur correspond généralement au code présent sur une machine quelconque dans le monde et dont l'objectif est de fournir les pages HTML et ressources demandées.
 
-Lorsque votre navigateur souhaite visualiser une page web, il envoit une requête au serveur demandant le contenu de cette page.
-Le serveur répond avec le contenu de la page (typiquement une page html, css, ou JavaScript).
-Le client analyse ensuite le code, et lorsqu'il rencontre une ressource externe non présente (typiquement une image, un autre fichier de code, etc) il emet de nouvelles requêtes au serveur afin d'obtenir ces fichiers manquants (typiquement suivant le protocole HTTP, ou encore FTP).
+Lorsque votre navigateur souhaite visualiser une page web, il envoie une requête au serveur demandant le contenu de cette page.
+Le serveur répond avec le contenu de la page (typiquement une page HTML, CSS, ou JavaScript).
+Le client analyse ensuite le code, et lorsqu'il rencontre une ressource externe non présente (typiquement une image, un autre fichier de code, etc) il émet de nouvelles requêtes au serveur afin d'obtenir ces fichiers manquants (typiquement suivant le protocole HTTP, ou encore FTP).
 
 
 L'une des solutions permettant de lire un fichier sur votre disque depuis du code JavaSciprt consiste à placer votre code sur un serveur web, qui va alors pouvoir "servir" les fichiers demandés par votre client (c-a-d votre navigateur) sous le protocole HTTP.
@@ -57,7 +57,7 @@ python -m http.server
 
 Ces commandes lancent un serveur local qui vient écouter par défaut le port 8000.
 
-Tappez ensuite l'adresse suivante dans votre navigateur
+Tapez ensuite l'adresse suivante dans votre navigateur
 ```
 http://localhost:8000/
 ```
@@ -67,9 +67,14 @@ Vous devriez voir désormais la scène avec les textures ([similaire à celle-ci
 
 ### Remarques lors de l'utilisation d'un serveur
 
-* L'utilisation d'un serveur local est très classique en programmation web, et nous devrons utiliser une approche similaire si nous souhaitons pouvoir charger une scène sauvegardé à partir d'un fichier.
-* Lorsque votre navigateur lit le code depuis le serveur, il est possible qu'il place en "cache" une partie du code (optimisation par défaut du comportement du navigateur). Il peut alors arriver que vous modifiez le code (par ex. les images de textures), alors que la scène visualisée dans le navigateur reste inchangée même après rechargement de celle-ci.
-=> N'hésitez pas à vider les données de cache de votre navigateur lorsque vous modifiez votre code (sous Firefox/Chrome raccourci clavier avec CTRL+Shift+Suppr).
+* L'utilisation d'un serveur local est très classique en programmation web, et nous devrons utiliser une approche similaire si nous souhaitons pouvoir charger une scène sauvegardée à partir d'un fichier.
+* Lorsque votre navigateur lit le code depuis le serveur, il est possible qu'il place en "cache" une partie du code (optimisation par défaut du comportement du navigateur). Il peut alors arriver de modifier le code (par ex. les images de textures), alors que la scène visualisée dans le navigateur reste inchangée même après rechargement de celle-ci.
+=> Pensez à vider les données du cache de votre navigateur lorsque vous modifiez votre code (sous Firefox/Chrome raccourci clavier avec CTRL+Shift+Suppr).
 
 
 ## Chargement asynchrone
+
+Notez que _textureLoader.load_ fonctionne en parallèle du reste du code de manière asynchrone. Il s'agit d'un comportement qui évite au navigateur de bloquer lors du chargement de ressources externes.
+Cela signifie par contre que les lignes suivantes vont potentiellement s'executer avant que l'image n'ait le temps d'être chargé (comportement non déterministe). Dans le cas présent cela peut impliquer que la scène puisse être affichée noire quelques secondes avant que la texture n'apparaisse. Si la transmission entre le serveur et le client est lente, ce phénomène sera accentué.
+
+Dans certains cas, il sera nécessaire de gérer spécifiquement le temps d'attente et de ne pas supposer que les données sont immédiatement disponibles.
