@@ -21,8 +21,17 @@ Pour commencer à travailler, téléchargez localement sur votre machine l'ensem
 * Téléchargez directement une archive .zip que vous décompressez sur votre ordinateur (voir illustration suivante).
 ![telechargement](pics/sauvegarde.gif)
 
-* Clonez le projet à l'aide de git. 
+* Clonez le projet à l'aide de git.
 Tappez en ligne de commande:
 `git clone https://github.com/drohmer/INF473F.git`
 
 Vous pourrez alors gérer, si vous le souhaitez, vos propres versions de code avec git.
+
+## Lecture des énoncés
+
+Les énoncés sont directement lisibles en ligne sur github dans votre navigateur.
+Notez qu'il s'agit de fichiers texte (format Markdown), extension .md
+
+Si vous préférez lire les énoncés en local, potentiellement hors ligne. Vous pouvez utiliser des extensions de votre navigateur (ex. _Markdown Viewer_ pour Chrome).
+
+Notez également que l'éditeur de texte [Atom](https://atom.io/) dispose par défaut d'un visualizeur Markdown.
