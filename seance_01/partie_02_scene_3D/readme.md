@@ -35,6 +35,8 @@ __Q.__ Observez désormais le fichier scene.js.
 
 * Notez l'utilisateur de l'opérateur _new_ lors de la création d'une instance d'une classe (similaire à l'utilisation de _new_ en Java par exemple). Cela appel le constructeur de la classe. Ce constructeur peut prendre potentiellement des paramètres.
 
+* Les couleurs sont classiquement définies avec leur code Rouge-Vert-Bleu (en anglais RGB) hexadécimal sur 3 octets. Le symbol '0x' en JavaScript indiquant un nombre donné en hexadécimal. Si cet encodage ne vous est pas familier, vous pouvez vous [référer à cette annexe](color/readme.md).
+
 * Les vecteurs Three.js sont des classes de type [THREE.Vector3](https://threejs.org/docs/#api/math/Vector3). Notez l'utilisation des méthodes _set_ permettant d'affecter de nouvelles coordonnées sans avoir à réaliser de réaffectation de variable.
 Il existe également les méthodes _copy_ (réalise la copie des champs de la classe dans une autre) et _clone_ (génère un nouvel objet ayant les mêmes valeurs que l'objet original).
 
