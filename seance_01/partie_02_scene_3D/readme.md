@@ -33,7 +33,7 @@ __Q.__ Observez désormais le fichier scene.js.
 
 #### Remarques générales
 
-* Notez l'utilisateur de l'opérateur _new_ lors de la création d'une instance d'une classe (similaire à l'utilisation de _new_ en Java par exemple). Cela appel le constructeur de la classe. Ce constructeur peut prendre potentiellement des paramètres.
+* Notez l'utilisateur de l'opérateur _new_ lors de la création d'une instance d'une classe (similaire à l'utilisation de _new_ en Java par exemple). Cela appelle le constructeur de la classe. Ce constructeur peut prendre potentiellement des paramètres.
 
 * Les couleurs sont classiquement définies avec leur code Rouge-Vert-Bleu (en anglais RGB) hexadécimal sur 3 octets. Le symbol '0x' en JavaScript indiquant un nombre donné en hexadécimal. Si cet encodage ne vous est pas familier, vous pouvez vous [référer à cette annexe](color/readme.md).
 

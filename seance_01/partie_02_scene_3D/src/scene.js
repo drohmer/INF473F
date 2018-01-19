@@ -34,7 +34,7 @@ spotLight.position.set(-5,8,0); // Positionnement dans du spot lumineux dans l'e
 sceneGraph.add(spotLight); // Ajout de la lumière dans le graphe de scène.
 
 // Initialisation d'un objet 3D: 
-const cubeGeometry = new THREE.BoxGeometry( 1,1,1 ); // Primitive cubique de taille 1x1x1 centré en (0,0,0)
+const cubeGeometry = new THREE.BoxGeometry( 1,1,1 ); // Primitive cubique de taille 1x1x1 centrée en (0,0,0)
 const cubeMaterial = new THREE.MeshLambertMaterial( {color:0xff0000} ); // Couleur rouge
 const cubeObject = new THREE.Mesh( cubeGeometry,cubeMaterial ); // Un objet 3D affichable contient une géométrie, et un matériau (~couleur dans ce cas)
 cubeObject.position.set(0,0.5,0); // Positionnement de l'objet dans l'espace (par défaut en (0,0,0) ).

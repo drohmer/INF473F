@@ -4,8 +4,8 @@ Les fonctions JavaScript peuvent se déclarer de la manière suivante:
 ```JavaScript
 function nomFonction( [Paramètres] ) {
     // Corps de la fonction
-    // ...
-    // return valeur;
+    ...
+    return valeur; // 'return' est optionnel
 }
 ```
 
@@ -18,7 +18,7 @@ Comme dans tout langage, l'organisation par fonctions permet de définir des blo
 Le code du fichier scene.js reproduit la même scène que dans la partie précédente, mais l'organise en une série de fonctions.
 
 Rem.
-* Notez que pour l'instant, les paramètres du graphe de scène, de la caméra et du moteur de rendus sont déclarés en tant que variable globale, et donc accessible dans toutes les fonctions.
+* Notez que pour l'instant, les variables associées au graphe de scène, à la caméra, et au moteur de rendus sont déclarées en tant que variables globales, et donc accessibles dans l'ensemble des fonctions.
 * Notez que la fonction de création de caméra prend en entrée trois paramètres: les coordonnées x,y,z de celle-ci.
 
 __Q.__ Lisez le code et assurez vous que vous compreniez ce que réalise chaque partie.

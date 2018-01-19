@@ -61,7 +61,10 @@ for( let k in T ) {
 console.log(T); //Affichage complet du tableau
 
 // Modification d'une valeur du tableau
-T[1] = -4; // Rem: il est possible de modifier le contenu d'une variable déclarée const (mais pas de la ré-assigner).
+T[1] = -4;
+// Rem: il est possible de modifier le contenu d'une variable déclarée const (ici T est déclaré comme const).
+// On dit que son contenu est 'mutable'.
+// Il ne serait par contre pas possible de ré-assigner T, c'est à dire qu'écrire par exemple 'T=[1,7,5]' serait incorrect.
 console.log(T);
 
 // Ajout d'un élément dans le tableau

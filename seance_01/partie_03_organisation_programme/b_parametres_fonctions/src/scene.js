@@ -40,7 +40,7 @@ function render(sceneThreeJs) {
 
 
 
-// Fonction d'initialisation d'une scène 3D sans objets 3D
+// Fonction d'initialisation d'une scène 3D sans objets
 //  Création d'un graphe de scène et ajout d'une caméra et d'une lumière.
 //  Création d'un moteur de rendu et ajout dans le document HTML
 function initEmptyScene(sceneThreeJs) {
@@ -61,7 +61,7 @@ function insertLight(sceneGraph) {
     sceneGraph.add(spotLight);
 }
 
-// Création et ajout d'une caméra dans le graphe de scène
+// Création d'une caméra
 function createCamera(x,y,z) {
     const camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,500);
     camera.position.set(x,y,z);
