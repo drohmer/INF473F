@@ -133,7 +133,7 @@ cylinderSon.rotateY(0.2);
 cylinderSon.position.set(0,2,0);
 ```
 
-Voir résultat correspondant.
+[Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/a_centrage_initial/index.html)
 
 Cette approche permet d'avoir une transformation simple, mais nécessite un travail préalable de centrage de l'objet par rapport à son axe de rotation. Cette approche ne fonctionne que si la position pivot de l'objet est connue à l'avance et constante au cours du temps.
 
@@ -171,6 +171,8 @@ cylinderSon.rotateY(0.2);
 cylinderSon.translateX(-1).translateY(-3).translateZ(-1);
 ```
 
+[Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/b_application_transformations/index.html)
+
 
 ### Reinitialisation de la matrice à chaque pas de temps
 
@@ -202,6 +204,7 @@ cylinderSon.rotateY(8*t);
 cylinderSon.translateX(-1).translateY(-3).translateZ(-1);
 ```
 
+[Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/c_ecriture_transformations/index.html)
 
 ### Utilisation des matrices
 
@@ -232,3 +235,5 @@ const M_red = new THREE.Matrix4().multiply(T_red).multiply(R_red).multiply(Tinv_
 
 cylinderSon.applyMatrix(M_red);
 ```
+
+[Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/d_matrices/index.html)
