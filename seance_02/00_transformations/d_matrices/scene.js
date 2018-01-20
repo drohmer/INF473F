@@ -25,40 +25,37 @@ function init3DObjects(sceneGraph) {
 
     const elementsToAdd = [];
 
-    const Lp = 4; // taille du plan
-    const planeGeometry = primitive.Quadrangle(Vector3(-Lp,0,-Lp),Vector3(-Lp,0,Lp),Vector3(Lp,0,Lp),Vector3(Lp,0,-Lp));
+    // Un plan en dessous des objets animés
+    const Lp = 4;
+    const planeGeometry = primitive.Quadrangle(Vector3(-Lp,-2,-Lp),Vector3(-Lp,-2,Lp),Vector3(Lp,-2,Lp),Vector3(Lp,-2,-Lp));
     const plane = new THREE.Mesh( planeGeometry,MaterialRGB(0.8,0.8,0.8) );
     plane.name = "plane";
-    elementsToAdd.push(plane);
+    plane.receiveShadow = true;
+    sceneGraph.add(plane);
 
-    const cubeGeometry = primitive.Cube( Vector3(0,1,0),1 );
-    const cube = new THREE.Mesh( cubeGeometry,MaterialRGB(1,0,0) );
-    cube.name = "cube";
-    elementsToAdd.push(cube);
+    // Une sphère permettant de visualiser l'origine
+    const sphereGeometry = primitive.Sphere( Vector3(0,0,0), 0.05 );
+    const sphere = new THREE.Mesh( sphereGeometry,MaterialRGB(1,1,1) );
+    sphere.name = "sphere";
+    sphere.castShadow = true;
+    sphere.receiveShadow = true;
+    sceneGraph.add(sphere);
 
-    const sphere1Geometry = primitive.Sphere( Vector3(-2,0.5,-2),0.5 );
-    const sphere1 = new THREE.Mesh( sphere1Geometry,MaterialRGB(1,1,0) );
-    sphere1.name = "sphere1";
-    elementsToAdd.push(sphere1);
-
-    const sphere2Geometry = primitive.Sphere( Vector3(-2,1.5,-2),0.5 );
-    const sphere2 = new THREE.Mesh( sphere2Geometry,MaterialRGB(0,1,0) );
-    sphere2.name = "sphere2";
-    elementsToAdd.push(sphere2);
-
-    const cylinderGeometry = primitive.Cylinder( Vector3(0,-1,0), Vector3(0,1,0),0.15 );
-    const cylinder = new THREE.Mesh( cylinderGeometry,MaterialRGB(0.4,0.9,1) );
+    // Le cylindre vert
+    const cylinderGeometry = primitive.Cylinder( Vector3(1,1,1), Vector3(1,3,1),0.15 );
+    const cylinder = new THREE.Mesh( cylinderGeometry,MaterialRGB(0,1,0) );
     cylinder.name = "cylinder";
-    elementsToAdd.push(cylinder);
+    cylinder.castShadow = true;
+    cylinder.receiveShadow = true;
+    sceneGraph.add(cylinder);
 
-
-
-    for( const k in elementsToAdd ) {
-        const element = elementsToAdd[k];
-        element.castShadow = true;
-        element.receiveShadow = true;
-        sceneGraph.add(element);
-    }
+    // Le cylindre rouge
+    const cylinderSonGeometry = primitive.Cylinder( Vector3(0,3,1), Vector3(2,3,1),0.1 );
+    const cylinderSon = new THREE.Mesh( cylinderSonGeometry,MaterialRGB(1,0,0) );
+    cylinderSon.name = "cylinderSon";
+    cylinderSon.castShadow = true;
+    cylinderSon.receiveShadow = true;
+    cylinder.add(cylinderSon);
 
 
 }
@@ -72,13 +69,28 @@ function animate(sceneThreeJs, time) {
 
     const t = time/1000;//time in second
 
-    const cube = sceneThreeJs.sceneGraph.getObjectByName("cube");
-    cube.position.set( Math.sin(3*t),0,0 );
 
     const cylinder = sceneThreeJs.sceneGraph.getObjectByName("cylinder");
-    // Rotation du cylinder
-    cylinder.setRotationFromAxisAngle(Vector3(0,0,1),Math.PI*t); // rotation de l'objet
-    cylinder.position.set(0,1.5,2); // placement de l'objet à sa position dans l'espace
+    const cylinderSon = sceneThreeJs.sceneGraph.getObjectByName("cylinderSon");
+
+    // Transformation du cylindre vert
+    const Tinv_green = new THREE.Matrix4().makeTranslation(-1,-1,-1);
+    const R_green = new THREE.Matrix4().makeRotationAxis(new Vector3(1,0,0), 0.01);
+    const T_green = new THREE.Matrix4().makeTranslation( 1, 1, 1);
+
+    const M_green = new THREE.Matrix4().multiply(T_green).multiply(R_green).multiply(Tinv_green);
+
+    cylinder.applyMatrix(M_green);
+
+
+    // Transformation du cylindre rouge
+    const Tinv_red = new THREE.Matrix4().makeTranslation(-1,-3,-1);
+    const R_red = new THREE.Matrix4().makeRotationAxis(new Vector3(0,1,0), 0.2);
+    const T_red = new THREE.Matrix4().makeTranslation( 1, 3, 1);
+
+    const M_red = new THREE.Matrix4().multiply(T_red).multiply(R_red).multiply(Tinv_red);
+    cylinderSon.applyMatrix(M_red);
+
 
 
     render(sceneThreeJs);

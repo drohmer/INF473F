@@ -75,8 +75,7 @@ function animate(sceneThreeJs, time) {
 
     const cylinder = sceneThreeJs.sceneGraph.getObjectByName("cylinder");
     // Rotation du cylinder
-    cylinder.position.set(0,0,0); //objet initialement centré autour de son centre de rotation
-    cylinder.setRotationFromAxisAngle(Vector3(0,0,1),Math.PI*t); // application de la rotation
+    cylinder.setRotationFromAxisAngle(Vector3(0,0,1),Math.PI*t); // rotation de l'objet
     cylinder.position.set(0,1.5,2); // placement de l'objet à sa position dans l'espace
 
     render(sceneThreeJs);
