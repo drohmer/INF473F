@@ -75,13 +75,13 @@ function animate(sceneThreeJs, time) {
 
 
     // Composition des transformations souhaitée:
-    // translation(-1,-1,-1) o rotationX(dTheta) o translation(1,1,1)
+    // translation(1,1,1) o rotationX(dTheta) o translation(-1,-1,-1)
     cylinder.translateX(1).translateY(1).translateZ(1);
     cylinder.rotateX(0.01);
     cylinder.translateX(-1).translateY(-1).translateZ(-1);
 
     // Composition des transformations souhaitée:
-    // translation(-1,-3,-1) o rotationY(dPhi) o translation(1,3,1)
+    // translation(1,3,1) o rotationY(dPhi) o translation(-1,-3,-1)
     cylinderSon.translateX(1).translateY(3).translateZ(1);
     cylinderSon.rotateY(0.2);
     cylinderSon.translateX(-1).translateY(-3).translateZ(-1);

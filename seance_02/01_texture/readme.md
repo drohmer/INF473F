@@ -6,7 +6,7 @@ Ce programme présente l'application de textures sur une surface. À titre d'inf
 1. Une image qui va être appliquée sur la surface.
 1. Des coordonnées de textures (généralement appelées (u,v), ou (s,t)) associées à chaque sommet du maillage, et qui viennent donner la correspondance entre un sommet donné du maillage, et sa position 2D dans l'espace de l'image.
 
-Les coordonnées de textures sont généralement complétées automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
+Les coordonnées de textures sont généralement calculées automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
 
 Dans le cas du code suivant, on utilise les coordonnées de textures fournies par défaut lors de la création des primitives de Three.js
 Nous devons cependant charger les images qui sont placées dans le répertoire _pictures/_
@@ -24,7 +24,7 @@ Cela signifie que votre navigateur n'a pas réussi à lire l'image depuis le dis
 
 ### Explication du problème
 
-Pour des raisons de sécurités, un navigateur exécutant du code JavaScript ne peut pas lire par défaut des fichiers présents sur votre disque dur. Plus spécifiquement le protocole permettant de "servir" des fichiers via _file://_ n'est pas autorisé en JavaScript.
+Pour des raisons de sécurité, un navigateur exécutant du code JavaScript ne peut pas lire par défaut des fichiers présents sur votre disque dur. Plus spécifiquement le protocole permettant de "servir" des fichiers via _file://_ n'est pas autorisé en JavaScript.
 Notez que si cela était autorisé, n'importe quelle page web sur internet (plus précisément n'importe quel serveur) contenant du JavaScript que vous visiteriez pourrait, à distance, parcourir et lire le contenu de votre disque dur.
 
 On pourra noter que le principe général de la communication web passe par un schéma dit de client/serveur.
