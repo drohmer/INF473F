@@ -3,7 +3,7 @@
 Ce programme permet de placer des cubes les uns au-dessus des autres dans la direction de la caméra de manière interactive (CTRL+clic gauche de la souris).
 Elle propose également une interface disposant des trois options suivantes
 * La sauvegarde de la scène au format JSON dans un fichier que l'on peut sauvegarder
-* Le chargement d'une scène sauvegardé au format JSON depuis un fichier sur le disque dur
+* Le chargement d'une scène sauvegardée au format JSON depuis un fichier sur le disque dur
 * L'export d'un ensemble de formes 3D au format .obj
 
 
@@ -12,7 +12,7 @@ __Q.__ Créez une scène arbitraire et cliquez sur 'Save'.
 
 Notez les points suivants
 * Pour les mêmes raisons de sécurités vues lors du chargement de texture à partir d'un fichier, JavaScript ne peut pas écrire directement sur votre disque dur. Sauvegarder un fichier passe ici par la demande de téléchargement d'un fichier, ici réalisé par la fonction _download_. Cette fonction vient créer un objet HTML de type 'lien' sur lequel il clique.
-* Le format de sauvegarde [JSON](https://www.json.org/) (JavaScript Object Notation) est un format de description de données sous forme de (pair,valeur). Ce format aisément lisible et modifiable en tant que texte est particulièrement adapté à l'encodage des structures JavaScript qui peuvent nativement s'exporter et s'importer depuis du JSON. 
+* Le format de sauvegarde [JSON](https://www.json.org/) (JavaScript Object Notation) est un format de description de données sous forme de (pair,valeur). Ce format aisément lisible et modifiable en tant que texte est particulièrement adapté à l'encodage des structures JavaScript qui peuvent nativement s'exporter et s'importer depuis du JSON.
 
 Sauvergardez le fichier téléchargé (save_scene.js) dans le répertoire src/ contenant le code.
 Observez le fichier JSON avec un éditeur de texte, notez qu'il s'agit d'une description ASCII que l'on peut potentiellement modifier à la main.

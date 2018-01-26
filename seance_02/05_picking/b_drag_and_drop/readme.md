@@ -2,11 +2,12 @@
 
 Ce second code propose de réaliser la [sélection ainsi que le déplacement de l'objet par une approche de type "drag and drop"](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/05_picking/b_drag_and_drop/src/index.html).
 
-Notez que le code n'utilise cette fois plus de variables globales et adapte les fonctions de _callback_ passées en paramètres de manière à ne recevoir que les données nécessaires.
+Notez que le code n'utilise cette fois plus de variable globale et adapte les fonctions de _callback_ passées en paramètres de manière à ne recevoir que les données nécessaires.
 
 Dans le cas général, le déplacement de la souris ne peut déterminer qu'un déplacement 2D, il manque donc une information pour réaliser un déplacement 3D complet. Plusieurs options sont possibles, par exemple
-* limiter la translation sur un axe global (x, y, z).
-* limiter la translation sur un axe local à la caméra (horizontal, vertical, profondeur)
+* appliquer la translation le long d'un axe global choisi à l'avance (typiquement: x, y, z).
+* appliquer la translation le long d'un ou plusieurs axes locaux dépendant de l'orientation de la caméra
+Dans tous les cas, le mouvement de la souris sur le plan de l'écran doit être interprété de manière à représenter une translation dans ces repères.
 
 L'une des approches permettant d'imiter l'impression de "drag and drop" de l'objet consiste à déplacer celui-ci dans le plan de la caméra, de manière à ce que le sommet sélectionné suive exactement le mouvement de la souris. Il s'agit du cas présenté ici.
 

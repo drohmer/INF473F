@@ -21,14 +21,14 @@ let sphereSelection = null;
 // Un plan orthogonal à celui de la caméra passant par le point selectionné
 let planeSelection = null;
 
-// Creation des objets de bases de la scène
+// Creation des objets de base de la scène
 initEmptyScene();
 init3DObjects();
 
 // Creation d'un lanceur de rayon (ray caster) de Three.js pour le calcul de l'intersection entre un objet et un rayon
 const raycaster = new THREE.Raycaster();
 
-// Fonctions de rappels
+// Fonctions de rappel
 document.addEventListener( 'mousedown', onMouseDown );
 document.addEventListener( 'mouseup', onMouseUp );
 document.addEventListener( 'mousemove', onMouseMove );
@@ -124,11 +124,11 @@ function onMouseDown(event) {
 
 
         // Calcul d'un rayon passant par le point (x,y)
-        //  c.a.d la direction formé par les points p de l'espace tels que leurs projections sur l'écran par la caméra courante soit (x,y).
+        //  c.a.d la direction formée par les points p de l'espace tels que leurs projections sur l'écran par la caméra courante soit (x,y).
         const camera = sceneThreeJs.camera;
         raycaster.setFromCamera(new THREE.Vector2(x,y), camera);
 
-        // Calcul des interections entre le rayon et les objets passés en paramètres
+        // Calcul des intersections entre le rayon et les objets passés en paramètre
         const intersects = raycaster.intersectObjects( pickingData.selectableObjects );
 
         const nbrIntersection = intersects.length;
@@ -184,7 +184,7 @@ function animate(time) {
 
 
 
-// Fonction d'initialisation d'une scène 3D sans objets 3D
+// Fonction d'initialisation d'une scène 3D sans objet
 //  Création d'un graphe de scène et ajout d'une caméra et d'une lumière.
 //  Création d'un moteur de rendu et ajout dans le document HTML
 function initEmptyScene( ) {
@@ -239,7 +239,7 @@ function MaterialRGB(r,g,b) {
     return new THREE.MeshLambertMaterial( {color:c} );
 }
 
-// Creation de repères visuels indiquants les axes X,Y,Z entre [-1,1]
+// Creation de repères visuels indiquant les axes X,Y,Z entre [-1,1]
 function initFrameXYZ( ) {
 
     const sceneGraph = sceneThreeJs.sceneGraph;
