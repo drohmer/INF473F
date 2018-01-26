@@ -80,7 +80,7 @@ function onMouseDown(event) {
     const xPixel = event.clientX;
     const yPixel = event.clientY;
 
-    // Conversion des coordonnées pixel en coordonnées relative par rapport à la fenêtre (ici par rapport au canvas de rendu).
+    // Conversion des coordonnées pixel en coordonnées relatives par rapport à la fenêtre (ici par rapport au canvas de rendu).
     // Les coordonnées sont comprises entre -1 et 1
     const x = 2*(xPixel/canvasSize)-1;
     const y = 1-2*(yPixel/canvasSize);
@@ -119,7 +119,7 @@ function onKeyDown(event) {
 }
 
 // Fonction appelée lors du relachement d'une touche du clavier
-function onKeyUp(event) { 
+function onKeyUp(event) {
 	const keyCode = event.code;
 	console.log("Touche ",keyCode," relaché");
 }

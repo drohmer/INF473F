@@ -28,7 +28,7 @@ function init3DObjects(sceneGraph,pickableObjects) {
     vectorPoints.push( Vector2(0.65, 0.35) );
     vectorPoints.push( Vector2(0, 0.35) );
 
-    // Création d'une forme triangulé
+    // Création d'une forme triangulée
     const curveShape = new THREE.Shape( vectorPoints );
     const geometry = new THREE.ShapeGeometry( curveShape );
     const object = new THREE.Mesh( geometry, MaterialRGB(0.9,0.9,0.9) ) ;

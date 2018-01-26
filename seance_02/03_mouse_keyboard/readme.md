@@ -1,6 +1,6 @@
 # Gestion de la souris et du clavier
 
-JavaScript propose la gestion des évènements liés à la souris et au clavier par l'utilisation de fonction de rappels (similairement à l'interface graphique de dat.gui).
+JavaScript propose la gestion des évènements liés à la souris et au clavier par l'utilisation de fonctions de rappel (similairement à l'interface graphique de dat.gui).
 
 La syntaxe générale est:
 ```Javascript

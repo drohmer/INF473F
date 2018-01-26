@@ -21,7 +21,7 @@ function main() {
 
     initEmptyScene(sceneThreeJs);
     init3DObjects(sceneThreeJs.sceneGraph);
-    
+
     initGui(guiParam, sceneThreeJs); // Initialisation de l'interface
     updatedGui(guiParam, sceneThreeJs); //Initialisation de la visualisation en cohérence avec l'interface
 
@@ -31,13 +31,13 @@ function main() {
 
 // Met à jour les paramètres de la scène en fonction des valeurs de l'interface
 function updatedGui(guiParam,sceneThreeJs) {
-    
-    const p0 = Vector3(0.5,0.125,0.5); // position initial du centre de la primitive
+
+    const p0 = Vector3(0.5,0.125,0.5); // position initiale du centre de la primitive
 
     // Récupération de la primitive à afficher
     const sphere = sceneThreeJs.sceneGraph.getObjectByName("sphere");
     const cube = sceneThreeJs.sceneGraph.getObjectByName("cube");
-    
+
     let visibleShape = null;
     if( guiParam.primitiveType==="cube" ) {
     	visibleShape = cube;
@@ -83,7 +83,7 @@ function initGui(guiParam,sceneThreeJs) {
     gui.add( drawPrimitiveType, "Sphere").onFinishChange(updateFunc);// Bouton sphere
 
     // Paramètres de translations
-    gui.add( guiParam,"x",-5,5 ).onChange(updateFunc); 
+    gui.add( guiParam,"x",-5,5 ).onChange(updateFunc);
     gui.add( guiParam,"y", 0,6 ).onChange(updateFunc);
     gui.add( guiParam,"z",-5,5 ).onChange(updateFunc);
 

@@ -25,4 +25,4 @@ Rem. Une _fonction de rappel_/_callback_ est une fonction passée en paramètre 
 
 __Q__. Observez la mise en place de fonctions de rappels avec les méthodes _.onChange_ et _.onFinishChange_. Quel est la différence entre ces deux méthodes?
 
-Rem. On appelle _programmation évènementielle_ la gestion d'un code interagissant avec des évènements, dont l'ordre et l'instant d'activation n'est pas prévisible à l'avance (ici lié à l'utilisateur).
+Rem. On appelle _programmation évènementielle_ la gestion d'un code interagissant avec des évènements, dont l'ordre et l'instant d'activation ne sont pas prévisibles à l'avance (ici lié à l'utilisateur).
