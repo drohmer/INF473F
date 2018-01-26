@@ -43,7 +43,21 @@ Il n'est cependant pas nécessaire de placer votre code en ligne sur un serveur 
 
 _SimpleHTTPServer_ est un code python permettant de lancer un tel serveur.
 
-Lancez en ligne de commande suivante depuis la racine de votre code (depuis le répertoire src/):
+* Assurez vous tout d'abord que l'interpréteur Python soit installé sur votre machine. Pour cela, vous pouvez tapper en ligne de commande:
+```
+python -V
+```
+Rem. 
+* Sous Windows, la ligne de commande se lance par le programme `cmd`.
+* Vous pouvez installer Python librement sur votre ordinateur
+  * Sous windows, par le biais d'un téléchargement direct depuis le site [https://www.python.org/](https://www.python.org/)
+  * Sous linux, par le biais des packages standards.
+* Python est disponible suivant deux versions: 2 et 3. Les deux versions permettent de lancer un serveur.
+
+
+Une fois que l'interpréteur Python est disponible, placez vous en ligne de commande dans le répertoire racine de votre code, c'est à dire le répertoire `src/`.
+
+Lancez ensuite la commande suivante, dépendant de votre version de Python:
 
 * En Python 2
 ```
@@ -57,12 +71,13 @@ python -m http.server
 
 Ces commandes lancent un serveur local qui vient écouter par défaut le port 8000.
 
-Tapez ensuite l'adresse suivante dans votre navigateur
+Relancez ensuite votre navigateur en tapant l'adesse suivante dans la barre d'adresse:
 ```
 http://localhost:8000/
 ```
+(notez bien qu'il ne faut plus ouvrir votre navigateur sur le fichier `index.html`, mais directement y accéder par l'adresse localhost).
 
-Vous devriez voir désormais la scène avec les textures
+Vous devriez voir désormais la scène avec les textures. 
 
 
 ![Resultat](pictures/resultat.jpg)
